@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bidhouse</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="relative h-screen">
+      <div class="relative pt-6 pb-16 sm:pb-24">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6">
+          <nav
+            class="relative flex items-center justify-between md:flex md:justify-center"
+          >
+            <div
+              class="flex flex-1 items-center justify-between md:block md:flex-0 md:inset-y-0 md:left-0"
+            >
+              <div class="flex w-full items-center justify-between md:w-auto">
+                <a href="index.html">
+                  <img
+                    class="h-8 w-auto sm:h-10"
+                    src="https://tailwindui.com/img/logos/mark.svg?color=green&shade=600"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+            <div id="userActions">
+              <!-- Display user actions -->
+            </div>
+            <div class="md:flex md:items-center gap-3">
+              <span class="inline-flex rounded-md shadow" id="signUp">
+                <a
+                  href="signUp.html"
+                  class="inline-flex items-center rounded-md border border-transparent bg-white px-4 py-2 text-base font-medium text-green-900 hover:bg-gray-50"
+                  >Sign up</a
+                > </span
+              ><span class="inline-flex rounded-md shadow" id="signIn">
+                <a
+                  href="./signIn.html"
+                  class="inline-flex items-center rounded-md border border-transparent bg-green-900 px-4 py-2 text-base font-medium text-white"
+                  >Log in</a
+                >
+              </span>
+              <span class="hidden rounded-md shadow" id="profile">
+                <a
+                  href="profile.html"
+                  class="inline-flex items-center rounded-md border border-transparent bg-white px-4 py-2 text-base font-medium text-green-900 hover:bg-gray-50"
+                  >Profile</a
+                >
+              </span>
+              <span class="hidden rounded-md shadow" id="signOutButton">
+                <a
+                  href="./index.html"
+                  class="inline-flex items-center rounded-md border border-transparent bg-green-900 px-4 py-2 text-base font-medium text-white"
+                  >Sign Out</a
+                >
+              </span>
+            </div>
+          </nav>
+        </div>
+
+        <main class="mx-auto mt-16 max-w-7xl px-4 sm:mt-24">
+          <div class="text-center">
+            <p
+              class="mx-auto mt-3 max-w-md text-base text-gray-500 sm:text-lg md:mt-5 md:max-w-3xl md:text-xl"
+            >
+              Find and sell hidden gems from your household
+            </p>
+            <h1
+              class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl"
+            >
+              <span class="block xl:inline">Make a bid on your</span>
+              <span
+                class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-green-800"
+                >favorite items</span
+              >
+            </h1>
+            <div
+              class="mx-auto carousel carousel-center max-w-lg p-4 space-x-4 rounded-box mt-10"
+            >
+              <img
+                src="/public/images/auctionimage-dall-e.webp"
+                alt="auction image"
+              />
+            </div>
+            <div
+              class="mx-auto mt-5 max-w-md sm:flex sm:justify-center md:mt-8"
+            >
+              <div class="rounded-md shadow">
+                <a
+                  href="listings.html"
+                  class="flex w-full items-center justify-center rounded-md border border-transparent bg-emerald-900 px-8 py-3 text-base font-medium text-white hover:bg-emerald-900 md:py-4 md:px-10 md:text-lg"
+                  >Browse all auctions</a
+                >
+              </div>
+              <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
+                <a
+                  href="createlisting.html"
+                  class="flex w-full items-center justify-center rounded-md border border-transparent bg-white px-8 py-3 text-base font-medium text-emerald-900 hover:bg-gray-50 md:py-4 md:px-10 md:text-lg"
+                  >Sell something</a
+                >
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script type="module" src="src/js/profile/getUser.js"></script>
+  </body>
+</html>
